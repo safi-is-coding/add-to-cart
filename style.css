@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:cadetblue;
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.container p{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.container{
+    background-color: blanchedalmond;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    height: 100%;
+    max-width: 320px;
+}
+
+.container img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background: rgba(193, 232, 237, 0.488);
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container .add-button{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    background: rgb(255, 63, 102);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* .container .went-wrong{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background: rgb(255, 105, 127);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+} */
+
+.container .added{
+    font-size: 18px;
+    background: rgb(155, 255, 170);
+    color: black;
+}
+
+.container .wrong{
+    font-size: 18px;
+    background: rgb(233, 0, 210);
+    color: white;
+}
+
+/* .add-button:focus{
+    font-size: 15px;
+    background: rgb(155, 255, 170);
+    color: black;
+}  */
+
+
+input:hover{
+    box-shadow: 0.5px 0.5px 2px 1px gray;
+
+}
+
+input:focus{
+    box-shadow: 0px 0px 0.5px 0.8px rgb(0, 15, 222);
+    background-color: rgba(115, 212, 254, 0.29);
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+
+.container ul li {
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #FFFDF8;
+    padding: 10px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 02px rgba(0, 0, 0, 0.488);
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container li:hover{
+    background-color: rgba(186, 246, 255, 0.72);
+}
